@@ -1,0 +1,581 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+    --main-color: #A64AC9;
+    --text-grey: #414141;
+    --background: #FAFAFA;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
+.sidebar {
+    height: calc(100% - 60px);
+    width: 270px;
+    position: fixed;
+    left: 0;
+    top: 78px;
+    z-index: 100;
+    background: #fff;
+    color: var(--text-grey);
+    overflow-y: auto;
+    box-shadow: -5px 0 15px 0 rgb(54, 54, 54);
+    z-index: 1;
+}
+
+.sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 0rem 1rem;
+}
+
+.siderbar-menu {
+    padding: 1rem;
+}
+
+.sidebar li {
+    text-align: center;
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+
+.sidebar a {
+    color: var(--text-grey);
+    font-size: .9rem;
+}
+
+.sidebar a span:last-child {
+    padding-left: .6rem;
+}
+
+.sidebar-user {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.sidebar-user img {
+    border-radius: 50%;
+    height: 74px;
+    width: 72px;
+}
+
+.user-image {
+    padding-top: 20px;
+}
+
+.main-content {
+    position: relative;
+    margin-left: 270px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    background: var(--main-color);
+    height: 78px;
+    padding: 0rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    z-index: 2;
+    border: none;
+}
+
+main {
+    margin-top: 78px;
+    background: var(--background);
+    min-height: 90vh;
+    padding: 1rem;
+}
+
+h3{
+    font-size: 36px;
+    font-weight: lighter;
+    font-style: normal;
+    font-family: 'Poppins', sans-serif;
+    color: #FFF;
+}
+
+.website-name {
+    padding-left: 55px;
+}
+
+.website-name a{
+    text-decoration: none;
+    color: #FFF;
+}
+
+.active {
+    background-color: #fccf053a;
+    border-left: 5px solid #FCCD05;
+    color: #FFF;
+}
+
+.action {
+    align-items: center;
+}
+
+hr {
+    border-top: 1px solid #DBD5D5;
+}
+
+.button {
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+.btn1 {
+    background-color: #A64AC9;
+    width: 150px;
+    position: fixed;
+    bottom: 25px;
+    right: 70px;
+    padding-left: 100px;
+    padding-right: 100px;
+    font-size: 16px;
+    font-weight: 5px;
+    border-radius: 37px;
+    color: #FFF;
+    padding: 10px;
+}
+
+.btn2 {
+    background-color: #A64AC9;
+    width: 107px;
+    padding-left: 34px;
+    padding-right: 34px;
+    font-size: 16px;
+    font-weight: 5px;
+    border-radius: 37px;
+    color: #FFF;
+    padding: 10px;
+    display: block;
+    margin: auto;
+}
+
+.btn3 {
+    background-color: #3CCFCF;
+    width: 107px;
+    padding-left: 34px;
+    padding-right: 34px;
+    font-size: 16px;
+    font-weight: 5px;
+    border-radius: 37px;
+    color: #FFF;
+    padding: 6px;
+    /*display: block;
+    margin: auto 5px;*/
+}
+
+.btn4 {
+    background-color: red;
+    width: 107px;
+    padding-left: 34px;
+    padding-right: 34px;
+    font-size: 16px;
+    font-weight: 5px;
+    border-radius: 37px;
+    color: #FFF;
+    padding: 6px;
+    display: block;
+    margin: auto 5px;
+}
+
+.btnLeave {
+    background-color: #FF0000;
+    width: 140px;
+    padding-left: 34px;
+    padding-right: 34px;
+    font-size: 16px;
+    font-weight: 5px;
+    border-radius: 5px;
+    color: #FFF;
+    padding: 6px;
+    display: block;
+    margin: auto; 
+}
+
+.btnNext {
+    background-color: #3CCFCF;
+    width: 140px;
+    padding-left: 34px;
+    padding-right: 34px;
+    font-size: 16px;
+    font-weight: 5px;
+    border-radius: 5px;
+    color: #FFF;
+    padding: 6px;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.btnView {
+    background-color: #FCCD05;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.btnPass {
+    background-color: greenyellow;
+    width: 40px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    border-radius: 3px;
+}
+
+.btnFail {
+    background-color: red;
+    width: 40px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    color: #FFF;
+    border-radius: 3px;
+}
+
+.action-btn {
+    padding-top: 25px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.btnCancel {
+    background-color: #959595;
+    color: white;
+    padding: 4px 20px;
+    border-radius: 12px;
+}
+
+.btnDelete {
+    background-color: #FF0000;  
+    color: white;
+    padding: 4px 20px;
+    border-radius: 12px;
+}
+
+.sorting {
+    left: 500;
+    border-radius: 5px;
+    width: 750px;
+    height: 76px;
+    background-color: #FFF;
+    box-shadow: 0 4px 2px -2px rgb(131, 128, 128);
+    position: fixed;
+    top: 72;
+    left: 400;
+    right: 500;
+    display: inline-block;
+    z-index: 1;
+}
+
+.sorting .quizTot {
+    text-align: center;
+    height: 76px;
+    width: 156px;
+    padding: 30px;
+    border-right: 1px solid  #DBD5D5;
+    float: left;
+}
+
+.sorting .sortBy {
+    width: 545px;
+    height: 76px;
+    font-size: 14px;
+    text-align: center;
+    padding: 30px;
+    margin-left: 146px;
+}
+
+.sorting .sortBy p {
+    display:inline;
+    padding: 10px;
+}
+
+.card-container {
+    margin-top: 40px;
+    margin-left: 130px;
+}
+
+.card-quiz {
+    width: 323px;
+    height: 150px;
+    background-color: #fff;
+    box-shadow: 0 4px 5px -2px rgb(131, 128, 128);
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    margin: 15px;
+    display: inline-block;
+}
+
+.card-quiz .quiz-name{
+    display: inline-flex;
+    position: relative;
+}
+
+.card-quiz .quiz-name p{
+    font-weight: bold;
+}
+
+i{
+    cursor: pointer;
+    color: #959595;
+    padding-left: 4px;
+}
+
+.left{
+  position: absolute;
+  left: 240px;
+}
+
+.left-left{
+    position: absolute;
+    left: 260px;
+}
+
+.card-desc  p{
+    color: #9AA2B9;
+    font-size: 15px;
+}
+
+.quiz-code input{
+    width: 240px;
+    height: 25px;
+    background-color: #959595;
+    border-radius: 12px;
+    padding-left: 20px;
+    margin-top: 15px;
+    float: left;
+    color: #FFF;
+    font-size: 15px;
+}
+
+.quiz-copy {
+    width:24px;
+    height: 24px;
+    border-radius: 50px;
+    background-color: #959595;
+    padding: 5px;
+    margin-top: 15px;
+    float: right;
+}
+
+.card-quiz .quiz-copy i{
+   color: #FFF;
+   font-size: 14px;
+   float: right;
+   text-align: center;
+}
+
+.code-container{
+    display: block;
+    margin: auto;
+    padding: 200px 0;
+    width: 300px;
+    height: 230px;
+}
+
+.code-container h4{
+    font-size: 36px;
+    color: #FFF;
+    font-weight: 2;
+    text-align: center;
+}
+
+.code-container input[type=text]{
+    margin: 30px 0px;
+    padding: 20px;
+    height: 40px;
+    width: 295px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.question-container {
+    padding: 55px;
+    color: #FFF;
+    font-weight: bold;
+}
+
+.pages{
+    float: left;
+}
+
+.ellipsis{
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: #FFF;
+    text-align: center;
+    margin: 0px 5px;
+}
+
+.ellipsis p{
+    padding-top: 8px;
+    font-size: 20px;
+    color: #414141;
+}
+
+.ellipsis .active{
+    background-color: #3CCFCF;
+}
+
+.ellipsis p .active{
+    color: #FFF;
+}
+
+.leave-btn{
+    float: right;
+}
+
+.question-details{
+    margin-top: 75px;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.question{
+    padding: 45px;
+    height: 200px;
+}
+
+.answer{
+    height: 240px;
+    width: 100%;
+    padding: 60px 80px;
+    border-radius: 5px;
+    background-color: #FFF;
+    color: #414141;
+}
+
+.quizdetail-container{
+    display: block;
+    margin: auto;
+    margin-top: 120px;
+    margin-bottom: 40px;
+    width: 520px;
+    max-height: 100%;
+    border-radius: 5px;
+    background-color: #FFF;
+    padding: 30px 40px;
+}
+
+.quizdetail-container p{
+    font-size: 14px;
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+.quizdetail-container input[type=text]{
+    padding: 10px;
+    width: 100%;
+    height: 35px;
+    border: none;
+    background-color: #F0EFEF;
+    border-radius: 5px;
+}
+
+.quizdetail-container textarea{
+    padding: 10px;
+    width: 100%;
+    height: 80px;
+    border: none;
+    background-color: #F0EFEF;
+    border-radius: 5px;
+    resize: none;
+}
+
+.quizdetail-container p{
+    color:rgb(131, 128, 128);
+    padding-bottom: 20px;
+    font-size: 13px;
+    font-weight: lighter;
+}
+
+.quizdetail-container h4{
+    text-align: center;
+    font-size: 18px;
+    padding: 20px 0;
+}
+
+.history-box{
+    background-color: #FFF;
+    width: 700px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 5px -2px rgb(131, 128, 128);
+}
+
+.history-box h4{
+    padding: 40px;
+}
+
+.history-box .chartbox{
+    height: 330px;
+    padding: 40px;
+}
+
+.history-box .details{
+    height: 200px;
+    display: block;
+    margin: auto;
+    padding: 40px;
+}
+
+
+
+
+
+
+
+
+
+
